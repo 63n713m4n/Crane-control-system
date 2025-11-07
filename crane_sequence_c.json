@@ -1,0 +1,88 @@
+{
+  "description": "Grade C: Queue system with CSV logging",
+  "sequences": {
+    "pick_from_source1": [
+      {
+        "description": "Move to Source1 with offset",
+        "setX": 55,
+        "setY": 200
+      },
+      {
+        "description": "Move down to pick at Source1",
+        "setX": 55,
+        "setY": 82
+      },
+      {
+        "description": "Activate vacuum",
+        "vacuum": 1
+      },
+      {
+        "description": "Move up from Source1",
+        "setX": 55,
+        "setY": 200
+      }
+    ],
+    "place_in_process1": [
+      {
+        "description": "Move to Process1 with offset",
+        "setX": 450,
+        "setY": 200
+      },
+      {
+        "description": "Move down to place at Process1",
+        "setX": 450,
+        "setY": 82
+      },
+      {
+        "description": "Release vacuum",
+        "vacuum": 0
+      },
+      {
+        "description": "Move up from Process1",
+        "setX": 450,
+        "setY": 200
+      }
+    ],
+    "run_process1": {
+      "description": "Start and wait for Process1",
+      "wait_for_process": 1
+    },
+    "pick_from_process1": [
+      {
+        "description": "Move down to pick at Process1",
+        "setX": 450,
+        "setY": 82
+      },
+      {
+        "description": "Activate vacuum",
+        "vacuum": 1
+      },
+      {
+        "description": "Move up from Process1",
+        "setX": 450,
+        "setY": 200
+      }
+    ],
+    "place_in_sink": [
+      {
+        "description": "Move to Sink with offset",
+        "setX": 945,
+        "setY": 200
+      },
+      {
+        "description": "Move down to place at Sink",
+        "setX": 945,
+        "setY": 82
+      },
+      {
+        "description": "Release vacuum",
+        "vacuum": 0
+      },
+      {
+        "description": "Move up from Sink",
+        "setX": 945,
+        "setY": 200
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "description": "Grade E: Source1 -> Process1 -> Sink (Single part sequence)",
+  "actions": [
+    {
+      "description": "Release vacuum initially",
+      "vacuum": 0
+    },
+    {
+      "description": "Move to Source1 with offset",
+      "setX": 55,
+      "setY": 200
+    },
+    {
+      "description": "Move down to pick position at Source1",
+      "setX": 55,
+      "setY": 82
+    },
+    {
+      "description": "Activate vacuum to pick part",
+      "vacuum": 1
+    },
+    {
+      "description": "Move up with part from Source1",
+      "setX": 55,
+      "setY": 200
+    },
+    {
+      "description": "Move to Process1 with offset",
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "description": "Move down to place position at Process1",
+      "setX": 450,
+      "setY": 82
+    },
+    {
+      "description": "Release vacuum to place part",
+      "vacuum": 0
+    },
+    {
+      "description": "Move up from Process1 before starting process",
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "description": "Wait for process (handled in code)",
+      "wait_for_process": 1
+    },
+    {
+      "description": "Move down to pick position at Process1",
+      "setX": 450,
+      "setY": 82
+    },
+    {
+      "description": "Activate vacuum to pick processed part",
+      "vacuum": 1
+    },
+    {
+      "description": "Move up with part from Process1",
+      "setX": 450,
+      "setY": 200
+    },
+    {
+      "description": "Move to Sink with offset",
+      "setX": 945,
+      "setY": 200
+    },
+    {
+      "description": "Move down to place position at Sink",
+      "setX": 945,
+      "setY": 82
+    },
+    {
+      "description": "Release vacuum to place part at Sink",
+      "vacuum": 0
+    },
+    {
+      "description": "Move up from Sink",
+      "setX": 945,
+      "setY": 200
+    }
+  ]
+}
