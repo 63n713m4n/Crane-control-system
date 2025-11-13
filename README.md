@@ -142,5 +142,3 @@ MIT License
 
 Built with industrial automation principles in mind
 Modular | Scalable | Maintainable
-text---
-
